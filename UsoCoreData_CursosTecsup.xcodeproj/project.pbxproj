@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FB7BAAF52CC1F18D002D08D8 /* ViewControllerAgregarCurso.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7BAAF42CC1F18D002D08D8 /* ViewControllerAgregarCurso.swift */; };
+		FB7BAAF72CC1FD9E002D08D8 /* ViewControllerDetalleCurso.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7BAAF62CC1FD9E002D08D8 /* ViewControllerDetalleCurso.swift */; };
 		FBF262062CC01C84009255FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF262052CC01C84009255FB /* AppDelegate.swift */; };
 		FBF262082CC01C84009255FB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF262072CC01C84009255FB /* SceneDelegate.swift */; };
 		FBF2620A2CC01C84009255FB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF262092CC01C84009255FB /* ViewController.swift */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FB7BAAF42CC1F18D002D08D8 /* ViewControllerAgregarCurso.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerAgregarCurso.swift; sourceTree = "<group>"; };
+		FB7BAAF62CC1FD9E002D08D8 /* ViewControllerDetalleCurso.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerDetalleCurso.swift; sourceTree = "<group>"; };
 		FBF262022CC01C84009255FB /* UsoCoreData_CursosTecsup.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UsoCoreData_CursosTecsup.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBF262052CC01C84009255FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FBF262072CC01C84009255FB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -61,6 +65,8 @@
 				FBF262052CC01C84009255FB /* AppDelegate.swift */,
 				FBF262072CC01C84009255FB /* SceneDelegate.swift */,
 				FBF262092CC01C84009255FB /* ViewController.swift */,
+				FB7BAAF42CC1F18D002D08D8 /* ViewControllerAgregarCurso.swift */,
+				FB7BAAF62CC1FD9E002D08D8 /* ViewControllerDetalleCurso.swift */,
 				FBF2620B2CC01C84009255FB /* Main.storyboard */,
 				FBF262112CC01C85009255FB /* Assets.xcassets */,
 				FBF262132CC01C85009255FB /* LaunchScreen.storyboard */,
@@ -141,9 +147,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB7BAAF72CC1FD9E002D08D8 /* ViewControllerDetalleCurso.swift in Sources */,
 				FBF2620A2CC01C84009255FB /* ViewController.swift in Sources */,
 				FBF262102CC01C84009255FB /* UsoCoreData_CursosTecsup.xcdatamodeld in Sources */,
 				FBF262062CC01C84009255FB /* AppDelegate.swift in Sources */,
+				FB7BAAF52CC1F18D002D08D8 /* ViewControllerAgregarCurso.swift in Sources */,
 				FBF262082CC01C84009255FB /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
