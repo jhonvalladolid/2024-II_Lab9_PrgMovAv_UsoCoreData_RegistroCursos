@@ -57,24 +57,24 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Agregar Curso" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="APN-iI-40Q">
-                                <rect key="frame" x="141.66666666666666" y="117.99999999999999" width="110" height="20.333333333333329"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="118.66666666666667" y="118" width="155.66666666666663" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre del Curso:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gBS-W6-Yen">
-                                <rect key="frame" x="125" y="178.33333333333334" width="143" height="20.333333333333343"/>
+                                <rect key="frame" x="125" y="188" width="143" height="20.333333333333343"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ingrese aqui el nombre de curso" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2Nc-J1-sWr">
-                                <rect key="frame" x="79.000000000000014" y="218.66666666666666" width="235.33333333333337" height="34"/>
+                                <rect key="frame" x="79.000000000000014" y="228.33333333333334" width="235.33333333333337" height="34.000000000000028"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="die-OB-a6r">
-                                <rect key="frame" x="63" y="292.66666666666669" width="267" height="34"/>
+                                <rect key="frame" x="63" y="302.33333333333331" width="267" height="34"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Promedio de Laboratorios:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WML-by-VgL">
                                         <rect key="frame" x="0.0" y="0.0" width="201.33333333333334" height="34"/>
@@ -90,7 +90,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="wn3-lG-OCL">
-                                <rect key="frame" x="63" y="366.66666666666669" width="267" height="34"/>
+                                <rect key="frame" x="63" y="376.33333333333331" width="267" height="34"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Promedio de Prácticas:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8cI-Rf-w2b">
                                         <rect key="frame" x="0.0" y="0.0" width="176.33333333333334" height="34"/>
@@ -106,7 +106,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="97" translatesAutoresizingMaskIntoConstraints="NO" id="QhY-JE-dJI">
-                                <rect key="frame" x="63" y="440.66666666666669" width="267.33333333333331" height="34"/>
+                                <rect key="frame" x="63" y="450.33333333333331" width="267.33333333333331" height="34"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Examen Final:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uM9-Gr-GkM">
                                         <rect key="frame" x="0.0" y="0.0" width="104.66666666666667" height="34"/>
@@ -122,7 +122,7 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rlj-JP-ZLN">
-                                <rect key="frame" x="153.66666666666666" y="534.66666666666663" width="85.666666666666657" height="34.333333333333371"/>
+                                <rect key="frame" x="153.66666666666666" y="544.33333333333337" width="85.666666666666657" height="34.333333333333371"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Guardar"/>
                                 <connections>
@@ -130,7 +130,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UMk-Ou-SWa">
-                                <rect key="frame" x="150.66666666666666" y="589" width="91.666666666666657" height="34.333333333333371"/>
+                                <rect key="frame" x="150.66666666666666" y="598.66666666666663" width="91.666666666666657" height="34.333333333333371"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Cancelar"/>
                                 <connections>
@@ -180,19 +180,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Detalles del Curso" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ayf-9B-NXh">
-                                <rect key="frame" x="127.33333333333333" y="122.99999999999999" width="138.66666666666669" height="20.333333333333329"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="99.000000000000014" y="123" width="195.33333333333337" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre del Curso:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zWM-Tr-s5f">
-                                <rect key="frame" x="125" y="183.33333333333334" width="143" height="20.333333333333343"/>
+                                <rect key="frame" x="125" y="193" width="143" height="20.333333333333343"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="70" translatesAutoresizingMaskIntoConstraints="NO" id="lvK-Bu-JPZ">
-                                <rect key="frame" x="59" y="243.66666666666666" width="275" height="20.333333333333343"/>
+                                <rect key="frame" x="59" y="253.33333333333334" width="275" height="20.333333333333343"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nota de Laboratorio:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3c1-Hr-t9W">
                                         <rect key="frame" x="0.0" y="0.0" width="156.66666666666666" height="20.333333333333332"/>
@@ -209,7 +209,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="87" translatesAutoresizingMaskIntoConstraints="NO" id="PxN-xz-5xe">
-                                <rect key="frame" x="57.666666666666657" y="294" width="278" height="20.333333333333314"/>
+                                <rect key="frame" x="57.666666666666657" y="303.66666666666669" width="278" height="20.333333333333314"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nota de Prácticas:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MT8-lv-cMv">
                                         <rect key="frame" x="0.0" y="0.0" width="140" height="20.333333333333332"/>
@@ -226,7 +226,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="54" translatesAutoresizingMaskIntoConstraints="NO" id="1HV-Ph-09Y">
-                                <rect key="frame" x="59.333333333333343" y="344.33333333333331" width="274.66666666666663" height="20.333333333333314"/>
+                                <rect key="frame" x="59.333333333333343" y="354" width="274.66666666666663" height="20.333333333333314"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nota de Examen Final:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RQA-ex-jGk">
                                         <rect key="frame" x="0.0" y="0.0" width="169.33333333333334" height="20.333333333333332"/>
@@ -242,20 +242,20 @@
                                     </label>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Resultado:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rH0-YW-a31">
-                                <rect key="frame" x="156.33333333333334" y="414.66666666666669" width="80.666666666666657" height="20.333333333333314"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Resultado Final:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rH0-YW-a31">
+                                <rect key="frame" x="136.33333333333334" y="424.33333333333331" width="120.33333333333334" height="20.333333333333314"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Resultado:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kDc-HO-YdF">
-                                <rect key="frame" x="156.33333333333334" y="455" width="80.666666666666657" height="20.333333333333314"/>
+                                <rect key="frame" x="156.33333333333334" y="464.66666666666669" width="80.666666666666657" height="20.333333333333314"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UP7-bk-ecl">
-                                <rect key="frame" x="160.66666666666666" y="520.33333333333337" width="71.666666666666657" height="34.333333333333371"/>
+                                <rect key="frame" x="160.66666666666666" y="530" width="71.666666666666657" height="34.333333333333371"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Volver"/>
                                 <connections>
@@ -263,7 +263,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="79B-SD-Pii">
-                                <rect key="frame" x="154.66666666666666" y="574.66666666666663" width="84" height="34.333333333333371"/>
+                                <rect key="frame" x="154.66666666666666" y="584.33333333333337" width="84" height="34.333333333333371"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Eliminar"/>
                                 <connections>
@@ -301,6 +301,7 @@
                         <outlet property="txtNotaLaboratorio" destination="Ysx-or-fp4" id="8hF-4Q-Ag9"/>
                         <outlet property="txtNotaPractica" destination="MLF-bS-4mL" id="yZX-5P-eap"/>
                         <outlet property="txtResultado" destination="kDc-HO-YdF" id="0mK-UB-VBk"/>
+                        <outlet property="txtResultadoNota" destination="rH0-YW-a31" id="IOW-tW-gVL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hgs-sZ-stj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

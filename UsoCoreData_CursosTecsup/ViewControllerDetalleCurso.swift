@@ -14,6 +14,7 @@ class ViewControllerDetalleCurso: UIViewController {
     @IBOutlet weak var txtNotaLaboratorio: UILabel!
     @IBOutlet weak var txtNotaPractica: UILabel!
     @IBOutlet weak var txtNotaExamen: UILabel!
+    @IBOutlet weak var txtResultadoNota: UILabel!
     @IBOutlet weak var txtResultado: UILabel!
     
     // Propiedad para recibir el curso desde la vista anterior
@@ -42,12 +43,13 @@ class ViewControllerDetalleCurso: UIViewController {
         
         if promedioFinal >= 11 {
             resultadoTexto = "Aprobado"
-            icono = "😇" // Carita feliz
+            icono = "😇"
         } else {
             resultadoTexto = "Reprobado"
-            icono = "😞" // Carita triste
+            icono = "😞"
         }
         
+        txtResultadoNota.text = "Resultado Final: \(String(format: "%.2f", promedioFinal))"
         txtResultado.text = "\(icono) \(resultadoTexto)"
     }
 
