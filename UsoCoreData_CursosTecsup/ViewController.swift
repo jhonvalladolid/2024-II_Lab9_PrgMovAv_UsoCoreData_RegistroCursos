@@ -76,13 +76,58 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         performSegue(withIdentifier: "segue_DetalleCurso", sender: curso)
     }
     
+    // Función para eliminar un curso de Core Data
+    func eliminarCurso(at indexPath: IndexPath) {
+        let contexto = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+        
+        // Obtener el curso que se va a eliminar
+        let cursoAEliminar = cursos[indexPath.row]
+        
+        // Eliminar el curso de Core Data
+        contexto.delete(cursoAEliminar)
+        
+        do {
+            try contexto.save()
+            cursos.remove(at: indexPath.row) // Remover de la lista local
+            tableView.deleteRows(at: [indexPath], with: .automatic) // Actualizar la tabla
+        } catch {
+            print("Error al eliminar el curso: \(error)")
+        }
+    }
+
+    // Configurar las acciones al deslizar una celda
+    func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        // Acción para editar el curso
+        let editarAccion = UIContextualAction(style: .normal, title: "Editar") { (action, view, completionHandler) in
+            let cursoAEditar = self.cursos[indexPath.row]
+            self.performSegue(withIdentifier: "segue_AgregarCurso", sender: cursoAEditar) // Usar el segue para editar
+            completionHandler(true)
+        }
+        editarAccion.backgroundColor = UIColor.blue
+        
+        // Acción para eliminar el curso
+        let eliminarAccion = UIContextualAction(style: .destructive, title: "Eliminar") { (action, view, completionHandler) in
+            self.eliminarCurso(at: indexPath) // Eliminar el curso de Core Data
+            completionHandler(true)
+        }
+        
+        let configuracion = UISwipeActionsConfiguration(actions: [eliminarAccion, editarAccion])
+        return configuracion
+    }
+
     // Preparar para la transición a la vista de detalles
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "segue_DetalleCurso" {
-            // Asegúrate de que el destino sea ViewControllerDetalleCurso
             if let detalleVC = segue.destination as? ViewControllerDetalleCurso {
                 // Pasa el curso seleccionado al controlador de detalles
                 detalleVC.curso = sender as? Cursos
+            }
+        } else if segue.identifier == "segue_AgregarCurso" {
+            if let agregarVC = segue.destination as? ViewControllerAgregarCurso {
+                // Si se está pasando un curso, entonces es una edición, si no, es un nuevo curso
+                if let cursoAEditar = sender as? Cursos {
+                    agregarVC.cursoAEditar = cursoAEditar
+                }
             }
         }
     }

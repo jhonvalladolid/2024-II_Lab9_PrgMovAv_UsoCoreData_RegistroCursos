@@ -8,34 +8,52 @@
 import UIKit
 
 class ViewControllerAgregarCurso: UIViewController {
-
+    
+    @IBOutlet weak var txtTitulo: UILabel!
     @IBOutlet weak var txtNombreCurso: UITextField!
     @IBOutlet weak var txtNotaLaboratorio: UITextField!
     @IBOutlet weak var txtNotaPractica: UITextField!
     @IBOutlet weak var txtNotaExamen: UITextField!
     
-    var anteriorVC = ViewController()
-    
+    // Propiedad para recibir el curso que se va a editar
+    var cursoAEditar: Cursos?
+
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        // Si hay un curso para editar, cargar los datos en los campos y cambiar el título
+        if let curso = cursoAEditar {
+            txtTitulo.text = "Editar Curso"
+            txtNombreCurso.text = curso.nombre
+            txtNotaLaboratorio.text = String(curso.promedioLaboratorios)
+            txtNotaPractica.text = String(curso.promedioPracticas)
+            txtNotaExamen.text = String(curso.examenFinal)
+        } else {
+            // Si no hay un curso, se está agregando un nuevo curso
+            txtTitulo.text = "Agregar Curso"
+        }
     }
     
     @IBAction func btnGuardar(_ sender: Any) {
         // Obtener el contexto de Core Data
         let contexto = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
         
-        // Crear un nuevo objeto de curso
-        let nuevoCurso = Cursos(context: contexto)
-        
-        // Asignar valores a las propiedades del nuevo curso
-        nuevoCurso.nombre = txtNombreCurso.text
-        nuevoCurso.promedioLaboratorios = Double(txtNotaLaboratorio.text ?? "0") ?? 0.0
-        nuevoCurso.promedioPracticas = Double(txtNotaPractica.text ?? "0") ?? 0.0
-        nuevoCurso.examenFinal = Double(txtNotaExamen.text ?? "0") ?? 0.0
+        // Si hay un curso a editar, actualizar sus propiedades
+        if let curso = cursoAEditar {
+            curso.nombre = txtNombreCurso.text
+            curso.promedioLaboratorios = Double(txtNotaLaboratorio.text ?? "0") ?? 0.0
+            curso.promedioPracticas = Double(txtNotaPractica.text ?? "0") ?? 0.0
+            curso.examenFinal = Double(txtNotaExamen.text ?? "0") ?? 0.0
+        } else {
+            // Si no, crear un nuevo curso
+            let nuevoCurso = Cursos(context: contexto)
+            nuevoCurso.nombre = txtNombreCurso.text
+            nuevoCurso.promedioLaboratorios = Double(txtNotaLaboratorio.text ?? "0") ?? 0.0
+            nuevoCurso.promedioPracticas = Double(txtNotaPractica.text ?? "0") ?? 0.0
+            nuevoCurso.examenFinal = Double(txtNotaExamen.text ?? "0") ?? 0.0
+        }
 
-        // Intentar guardar el contexto
+        // Guardar los cambios en el contexto
         do {
             try contexto.save()
             // Volver a la vista anterior
